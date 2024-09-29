@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1><strong>CALCULATOR</strong></h1>
+    </header>
+    <div class="calculator">
+        <input type="text" id="display" readonly>
+        <div class="buttons">
+            <button id="clearBtn" onclick="clearDisplay()">C</button>
+            <button onclick="deleteLastChar()">DEL</button>
+            <button class="operator" onclick="appendToDisplay('/')">/</button>
+            <button onclick="appendToDisplay('7')">7</button>
+            <button onclick="appendToDisplay('8')">8</button>
+            <button onclick="appendToDisplay('9')">9</button>
+            <button class="operator" onclick="appendToDisplay('*')">*</button>
+            <button onclick="appendToDisplay('4')">4</button>
+            <button onclick="appendToDisplay('5')">5</button>
+            <button onclick="appendToDisplay('6')">6</button>
+            <button class="operator" onclick="appendToDisplay('-')">-</button>
+            <button onclick="appendToDisplay('1')">1</button>
+            <button onclick="appendToDisplay('2')">2</button>
+            <button onclick="appendToDisplay('3')">3</button>
+            <button class="operator" onclick="appendToDisplay('+')">+</button>
+            <button onclick="appendToDisplay('0')">0</button>
+            <button onclick="appendToDisplay('.')">.</button>
+            <button id="equalBtn" class="operator" onclick="calculate()">=</button>
+        </div>
+    </div>
+
+    <footer>
+        <h2>~sm</h2>
+        <a href="https://github.com/hey-sandeep-here" target="_blank"  class="social-icon" onclick="window.open(this.href, '_blank'); return false;"><img src="github_PNG80.png" width="55" height="55" alt="Github"></a>
+        <a href="https://www.linkedin.com/in/sandeep-singh-mehta-a5695824b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="social-icon" onclick="window.open(this.href, '_blank'); return false;"><img src="linkedin.png" width="55" height="55" alt="LinkedIn"></a>
+        <a href="https://www.instagram.com/i.sandeep_05?igsh=cWk3ZTA3cGMzdnNs" target="_blank" class="social-icon" onclick="window.open(this.href, '_blank'); return false;"><img src="instagram-icon-png.webp" width="55" height="55" alt="Instagram"></a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
